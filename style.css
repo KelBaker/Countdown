@@ -1,0 +1,126 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000;
+    padding: 10px;
+    background-image: radial-gradient(circle at 44.6% -11.76%, #8c33b6 0, #831e9c 16.67%, #6f1f81 33.33%, #680f7e 50%, #6f1a96 66.67%, #2e125a 83.33%, #020235 100%);
+    border-bottom: 0.5px solid black;
+}
+
+#logo {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 50px;
+    color: rgb(125, 12, 160) !important;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+/* Parágrafo */
+p {
+    color: white;
+    font-size: 20px;
+}
+
+/* Estilos do meio-esquerdo */
+#meio-esquerdo {
+    background: linear-gradient(rgb(0, 0, 0), rgb(17, 15, 17));
+    color: rgb(178, 66, 212);
+    border: 0.5px solid black;
+    backdrop-filter: blur(10px); 
+}
+
+#meio-esquerdo p {
+    max-width: 410px;
+    text-align: justify;
+    margin-left: 5em;
+    font-size: 23px;
+}
+
+/* Estilos do meio-direito */
+#meio-direito {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px); 
+    border: 0.5px solid black;
+    color: rgb(175, 65, 209);
+    background-image: linear-gradient(135deg, #0a090c 0, #09080c 25%, #020009 50%, #000000 75%, #000000 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#meio-direito p {
+    color: rgb(117, 6, 151);
+}
+
+/* Parte principal */
+.parte-principal {
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+}
+
+/* Parte inferior */
+.parte-inferior {
+    display: grid;
+    grid-auto-flow: column;
+    background: linear-gradient(rgb(0, 0, 0) 55%, rgb(41, 0, 34));
+    border: 0.5px solid black;
+    min-height: 52vh;
+}
+
+.parte-inferior h1 {
+    color: rgb(191, 65, 230) !important;
+    font-size: 20px;
+    margin-left: 55px;
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+
+/* Botão */
+#botao {
+    margin-top: 65px;
+    margin-left: 30px;
+}
+
+button {
+    padding: 40px;
+    width: 500px;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: linear-gradient(to right, rgb(177, 29, 10), rgb(140, 8, 228));
+    box-shadow: 5px 5px 15px rgba(150, 14, 127, 0.411);
+    color: white;
+    cursor: pointer;
+    margin-top: 2.5em;
+}
+
+button:hover {
+    transform: translate(-0px, -10px);
+    transition-duration: 1s;
+}
+
+/* Vídeo */
+video {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    width: 100%; 
+    height: 350px; 
+    text-align: center;
+}
+

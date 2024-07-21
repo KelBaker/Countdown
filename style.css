@@ -1,8 +1,8 @@
-/* Estilos gerais */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(rgb(0, 0, 0), rgb(17, 15, 17)); /* Adiciona um background padrão ao body */
 }
 
 /* Cabeçalho */
@@ -10,7 +10,7 @@ header {
     background-color: #000000;
     padding: 10px;
     background-image: radial-gradient(circle at 44.6% -11.76%, #8c33b6 0, #831e9c 16.67%, #6f1f81 33.33%, #680f7e 50%, #6f1a96 66.67%, #2e125a 83.33%, #020235 100%);
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0.918);
 }
 
 #logo {
@@ -45,7 +45,7 @@ p {
 #meio-esquerdo p {
     max-width: 410px;
     text-align: justify;
-    margin-left: 5em;
+    margin: auto;
     font-size: 23px;
 }
 
@@ -53,7 +53,6 @@ p {
 #meio-direito {
     background: rgba(255, 255, 255, 0.5); 
     backdrop-filter: blur(10px); 
-    border: 0.5px solid black;
     color: rgb(175, 65, 209);
     background-image: linear-gradient(135deg, #0a090c 0, #09080c 25%, #020009 50%, #000000 75%, #000000 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -64,56 +63,6 @@ p {
     color: rgb(117, 6, 151);
 }
 
-/* Parte principal */
-.parte-principal {
-    display: grid;
-    grid-auto-flow: column;
-    text-align: center;
-}
-
-/* Parte inferior */
-.parte-inferior {
-    display: grid;
-    grid-auto-flow: column;
-    background: linear-gradient(rgb(0, 0, 0) 55%, rgb(41, 0, 34));
-    border: 0.5px solid black;
-    min-height: 52vh;
-}
-
-.parte-inferior h1 {
-    color: rgb(191, 65, 230) !important;
-    font-size: 20px;
-    margin-left: 55px;
-    margin-bottom: 3em;
-    margin-top: 2em;
-}
-
-
-/* Botão */
-#botao {
-    margin-top: 65px;
-    margin-left: 30px;
-}
-
-button {
-    padding: 40px;
-    width: 500px;
-    font-size: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background: linear-gradient(to right, rgb(177, 29, 10), rgb(140, 8, 228));
-    box-shadow: 5px 5px 15px rgba(150, 14, 127, 0.411);
-    color: white;
-    cursor: pointer;
-    margin-top: 2.5em;
-}
-
-button:hover {
-    transform: translate(-0px, -10px);
-    transition-duration: 1s;
-}
-
-/* Vídeo */
 video {
     max-width: 100%;
     margin: 0;
@@ -124,3 +73,202 @@ video {
     text-align: center;
 }
 
+/* Parte principal */
+.parte-principal {
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0), rgb(17, 15, 17));
+    border-bottom: 0.2px solid aliceblue;
+}
+
+/* Parte inferior */
+.parte-inferior {
+    display: grid;
+    grid-auto-flow: column;
+    background: linear-gradient(rgb(0, 0, 0) 55%, rgb(41, 0, 34));
+    border: 0.5px solid black;
+    min-height: 52vh;
+    border-bottom: 0.2px solid rgba(240, 248, 255, 0.274);
+}
+
+.parte-inferior h1 {
+    color: rgb(191, 65, 230) !important;
+    font-size: 22px;
+    margin-left: 55px;
+    margin-bottom: 4em;
+    margin-top: 2em;
+    margin-left: 5.2em;
+}
+
+.parte-inferior img {
+    margin-left: 2em;
+}
+
+/* Botão */
+#botao {
+    margin-top: 65px;
+    margin-left: 30px;
+}
+
+button {
+    padding: 55px;
+    width: 550px;
+    font-size: 45px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    background: linear-gradient(to right, rgb(177, 29, 10), rgb(140, 8, 228));
+    box-shadow: 5px 5px 15px rgba(150, 14, 127, 0.411);
+    color: white;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+
+button:hover {
+    transform: translate(-0px, -10px);
+    transition-duration: 1s;
+}
+
+
+
+/* ingressos img */
+.img-ingresso {
+    width: 150px;
+    height: auto; 
+    animation: float 3s ease-in-out infinite; 
+}
+
+.img-ingresso.sabado:hover {
+    filter: grayscale(100%); 
+}
+
+
+/* rodape */
+footer {
+    display: flex;
+    margin: 10px;
+    gap: 25px;
+    justify-content: center;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Media Queries */
+@media only screen and (min-width: 400px) and (max-width: 520px) {
+    header {
+        padding: 5px;
+    }
+
+    #logo {
+        width: 100px; 
+    }
+
+    .parte-principal,
+    .parte-inferior {
+        display: block; 
+        text-align: center; 
+        background: none; 
+    }
+
+    #meio-esquerdo,
+    #meio-direito,
+    #ingressos,
+    #botao {
+        background: linear-gradient(rgb(0, 0, 0), rgb(17, 15, 17)) !important; /* Adiciona o background às divs */
+    }
+
+    #meio-esquerdo {
+        border-bottom: 0.2px solid white;
+    }
+
+    video {
+        margin: 0;
+        padding: 0;
+    }
+
+    .parte-inferior {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    #meio-esquerdo p {
+        margin-bottom: 10%;
+    }
+
+    #meio-esquerdo h1 {
+        color: #92137d !important;
+    }
+
+    #meio-esquerdo h4 {
+        margin-bottom: 10%;
+    }
+
+    #meio-direito h4 {
+        max-width: 220px !important;
+        margin: auto;
+    }
+
+    #meio-direito h4 {
+        color: rgba(255, 255, 255, 0.856) !important;
+        font-size: 16px !important;
+    }
+
+    #meio-direito {
+        border-bottom: 0.2px solid aliceblue;
+        background-image: linear-gradient(135deg, #0a090c 0, #09080c 25%, #020009 50%, #000000 75%, #000000 100%);
+    }
+
+    .parte-inferior h1 {
+        margin: auto;
+        margin-bottom: 4em;
+        font-size: 18px;
+        max-width: 290px;
+        margin-top: 3em;
+        color: #92137d !important;
+    }
+
+    .parte-inferior {
+        background-color: black !important;
+    }
+
+    h1 {
+        font-size: 30px; 
+        color: #92137d !important;
+    }
+
+    h4 {
+        font-size: 18px; 
+        color: #a321a3 !important;
+    }
+
+    p {
+        font-size: 15px !important; 
+        max-width: 350px !important;
+    }
+
+    .img-ingresso {
+        width: 100px; 
+        margin: 10px;
+        margin-bottom: 4em;
+    }
+
+    #ingressos, #botao {
+        background: black !important;
+    }
+
+    button {
+        width: 80%; 
+        padding: 20px; 
+        font-size: 25px; 
+        margin-bottom: 2em;
+        margin-top: 0;
+        margin-right: 22px;
+    }
+}

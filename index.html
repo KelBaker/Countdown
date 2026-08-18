@@ -4,58 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CCXP22 - A maior experiência de cultura pop de todos os tempos. De 01 a 04 de dezembro. Garanta já o seu ingresso.">
+    <meta name="theme-color" content="#08060d">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>CCXP24</title>
+    <title>CCXP22 — Reviva o Épico</title>
 </head>
 
 <body>
-    <div id="parte-superior">
-        <header>
-            <img src="./imagens/logo.svg" alt="error" width="135px" id="logo">
-        </header>
-    </div>
-    <div class="parte-principal">
-        <section id="meio-esquerdo">
-            <h1>
-                REVIVA O ÉPICO
-            </h1>
-            <h4>
-                DE 01 A 04 DE DEZEMBRO
-            </h4>
-            <p>
-                Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em
-                casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será qualquer CCXP,
-                vai sera maior de todos os tempos. Prepare-se para visitar seus universos favoritos, explorar
-                o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos
-                nossos corredores.
-            </p>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-inner">
+            <a href="#" class="logo" aria-label="CCXP22 página inicial">
+                <img src="./imagens/logo.svg" alt="CCXP22" class="logo-img">
+            </a>
+            <nav class="nav" aria-label="Navegação principal">
+                <a href="#sobre">O Evento</a>
+                <a href="#ingressos">Ingressos</a>
+                <a href="#ingressos" class="nav-cta">Comprar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Parte principal / Hero -->
+        <section class="parte-principal" id="sobre">
+            <div class="meio-esquerdo">
+                <span class="badge">01 — 04 de Dezembro · São Paulo</span>
+                <h1>REVIVA<br><span class="accent">O ÉPICO</span></h1>
+                <p>
+                    Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta:
+                    "estamos em casa". A CCXP física está de volta — e não será qualquer edição, será
+                    a maior de todos os tempos. Prepare-se para visitar seus universos favoritos,
+                    explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras
+                    épicas a cada passo.
+                </p>
+                <div class="hero-actions">
+                    <a href="#ingressos" class="btn">Garanta já o seu</a>
+                    <a href="#ingressos" class="btn-ghost">Ver ingressos</a>
+                </div>
+            </div>
+
+            <div class="meio-direito">
+                <div class="countdown-card">
+                    <p class="countdown-label">Contagem regressiva para a maior CCXP de todos os tempos</p>
+                    <div class="countdown" id="Countdown" role="timer" aria-live="polite">
+                        <div class="count-box"><span class="count-num" data-dias>00</span><span class="count-unit">dias</span></div>
+                        <div class="count-box"><span class="count-num" data-horas>00</span><span class="count-unit">horas</span></div>
+                        <div class="count-box"><span class="count-num" data-minutos>00</span><span class="count-unit">min</span></div>
+                        <div class="count-box"><span class="count-num" data-segundos>00</span><span class="count-unit">seg</span></div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <video src="./video/gamer.mp4" autoplay muted loop playsinline aria-label="Vídeo de destaque do evento"></video>
+                </div>
+            </div>
         </section>
-        <section id="meio-direito">
-            <h1 id="Countdown">
-                Countdown
-            </h1>
-            <h4>
-                PARA A MAIOR CCXP DE TODOS OS TEMPOS
-            </h4>
-            <video src="./video/gamer.mp4" controls autoplay muted loop></video>
+
+        <!-- Parte inferior / Ingressos -->
+        <section class="parte-inferior" id="ingressos">
+            <div class="ingressos-header">
+                <h2>Ainda dá tempo de garantir o seu.<br><span class="accent">Mas corre!</span></h2>
+                <div class="ingressos-foto-wrap">
+                    <img src="./imagens/evento.jpg" alt="Multidão em show com telão e luzes de neon no palco da CCXP" class="ingressos-foto">
+                </div>
+                <p>Escolha o seu dia e viva a experiência completa.</p>
+            </div>
+
+            <div class="ingressos-grid">
+                <img src="./imagens/quinta.svg" alt="Ingresso de quinta-feira, 01 de dezembro" class="img-ingresso quinta">
+                <img src="./imagens/sexta.svg" alt="Ingresso de sexta-feira, 02 de dezembro" class="img-ingresso sexta">
+                <img src="./imagens/sabado.svg" alt="Ingresso de sábado, 03 de dezembro" class="img-ingresso sabado">
+                <img src="./imagens/domingo.svg" alt="Ingresso de domingo, 04 de dezembro" class="img-ingresso domingo">
+            </div>
+
+            <button type="button">Garanta já o seu</button>
         </section>
-    </div>
-    <div class="parte-inferior">
-        <section id="ingressos">
-            <h1>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h1>
-            <img src="./imagens/quinta.svg" alt="error" class="img-ingresso quinta">
-            <img src="./imagens/sexta.svg" alt="error" class="img-ingresso sexta">
-            <img src="./imagens/sabado.svg" alt="error" class="img-ingresso sabado">
-            <img src="./imagens/domingo.svg" alt="error" class="img-ingresso domingo">
-        </section>
-        <section id="botao">
-            <button>Garanta já o seu</button>
-        </section>
-    </div>
+    </main>
+
+    <!-- Rodapé -->
     <footer>
-        <p>Kelbaker56@gmail.com.br</p>
-        <p>Kelvin Henrique © 2024 </p>
+        <span class="logo footer-logo"><img src="./imagens/logo.svg" alt="CCXP22" class="logo-img"></span>
+        <div class="footer-info">
+            <a href="mailto:kelbaker56@gmail.com">kelbaker56@gmail.com</a>
+            <span>Kelvin Henrique © 2024</span>
+        </div>
     </footer>
+
     <script src="index.js"></script>
 </body>
 
